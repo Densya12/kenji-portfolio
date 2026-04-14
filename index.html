@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenji's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">KC</div>
+
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <section class="hero" id="home">
+        <div class="hero-text">
+            <p class="intro">HELLO, I'M</p>
+            <h1 class="name">Kenji Cabarloc</h1>
+            <h2 class="role">First Year BSIT Student</h2>
+
+            <p class="desc">
+                A First Year BSIT student at Bulacan State University — Meneses Campus, 
+                currently developing skills in programming, web development, and modern IT technologies.
+            </p>
+
+            <div class="buttons">
+                <a href="#about" class="btn">More About Me</a>
+            </div>
+        </div>
+
+        <div class="hero-image">
+            <img src="images/me.jpg" alt="Kenji">
+        </div>
+    </section>
+
+ 
+    <section id="about" class="about-section">
+        <h2 class="section-title">About Me</h2>
+
+        <div class="about-container">
+
+            <div class="about-text">
+
+                <div class="about-carousel">
+                    <div class="slides" id="slides">
+                        <img src="images/1.jpg" alt="Image 1">
+                        <img src="images/2.jpg" alt="Image 2">
+                        <img src="images/3.jpg" alt="Image 3">
+                        <img src="images/4.jpg" alt="Image 4">
+                    </div>
+
+                    <button class="prev" onclick="moveSlide(-1)">❮</button>
+                    <button class="next" onclick="moveSlide(1)">❯</button>
+
+                    <div class="dots">
+                        <span onclick="currentSlide(0)"></span>
+                        <span onclick="currentSlide(1)"></span>
+                        <span onclick="currentSlide(2)"></span>
+                        <span onclick="currentSlide(3)"></span>
+                    </div>
+                </div>
+
+                <p>
+                    I am <b>Kenji Cabarloc</b>, a First Year BSIT student at 
+                    <b>Bulacan State University, Meneses Campus</b>.
+                    I am <b>20 years old</b> and was born on <b>January 12, 2006</b>.
+                    I have a strong passion for technology and programming, and I am eager to learn and grow in the field of Information Technology. 
+                    I am currently developing my skills in programming languages, web development, and modern IT technologies. 
+                    I am excited to explore new opportunities and challenges in the world of IT as I continue my education and career journey.
+                </p>
+
+            </div>
+
+            <div class="about-info">
+
+                <div class="card">
+                    <h4>Personal Background</h4>
+                    <br>
+                    <p><b>Name:</b> Kenji Cabarloc</p>
+                    <br>
+                    <p><b>Birthday:</b> January 12, 2006</p>
+                    <br>
+                    <p><b>Age:</b> 20</p>
+                    <br>
+                    <p><b>Address:</b> 109 Daan Baka St. Maysantol Bulakan, Bulacan</p>
+                    <br>
+                    <p><b>Hobbies:</b> Basketball, Billiard, Online Games, Playing Instruments, and Watching</p>
+                    <br>
+                </div>
+
+                <div class="timeline">
+                    <h4 class="timeline-title">Education</h4>
+
+                    <div class="timeline-item">
+                        <span></span>
+                        <p><strong>College:</strong> Bulacan State University - Meneses Campus</p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <span></span>
+                        <p><strong>Senior High:</strong> STI College - Malolos</p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <span></span>
+                        <p><strong>Junior High:</strong> San Francisco Xavier High School</p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <span></span>
+                        <p><strong>Elementary:</strong> Young Achievers Montessori School</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+ 
+   <section id="skills" class="skills-section">
+
+    <h2 class="section-title">Skills</h2>
+
+    <div class="skills-container">
+
+    
+        <div class="skill-card">
+            <div class="skill-top">
+                <img src="images/html-5.png" alt="HTML">
+                <div>
+                    <h3>HTML</h3>
+                    <span class="badge solid">Solid</span>
+                </div>
+            </div>
+            <p class="desc">Structuring web pages</p>
+            <p class="learned">Learned in Senior High School</p>
+            <div class="progress-bar">
+                <div class="progress" style="width: 90%;"></div>
+            </div>
+        </div>
+
+        
+        <div class="skill-card">
+            <div class="skill-top">
+                <img src="images/css-3.png" alt="CSS">
+                <div>
+                    <h3>CSS</h3>
+                    <span class="badge solid">Solid</span>
+                </div>
+            </div>
+            <p class="desc">Designing layouts</p>
+            <p class="learned">Learned in Senior High School</p>
+            <div class="progress-bar">
+                <div class="progress" style="width: 85%;"></div>
+            </div>
+        </div>
+
+        
+        <div class="skill-card">
+            <div class="skill-top">
+                <img src="images/java-script.png" alt="JavaScript">
+                <div>
+                    <h3>JavaScript</h3>
+                    <span class="badge learning">Learning</span>
+                </div>
+            </div>
+            <p class="desc">Adding interactivity</p>
+            <p class="learned">Learned some during Senior High School and self-study</p>
+            <div class="progress-bar">
+                <div class="progress" style="width: 45%;"></div>
+            </div>
+        </div>
+
+        
+        <div class="skill-card">
+            <div class="skill-top">
+                <img src="images/java.png" alt="Java">
+                <div>
+                    <h3>Java</h3>
+                    <span class="badge learning">Learning</span>
+                </div>
+            </div>
+            <p class="desc">Object-oriented programming</p>
+            <p class="learned">Learned in College (BSIT) and during Senior High School</p>
+            <div class="progress-bar">
+                <div class="progress" style="width: 60%;"></div>
+            </div>
+        </div>
+
+        
+        <div class="skill-card">
+            <div class="skill-top">
+                <img src="images/c-sharp.png" alt="C#">
+                <div>
+                    <h3>C#</h3>
+                    <span class="badge basic">Basic</span>
+                </div>
+            </div>
+            <p class="desc">Mobile app logic</p>
+            <p class="learned">SHS Mobile App Development</p>
+            <div class="progress-bar">
+                <div class="progress" style="width: 40%;"></div>
+            </div>
+        </div>
+
+        
+        <div class="skill-card">
+            <div class="skill-top">
+                <img src="images/database.png" alt="SQL">
+                <div>
+                    <h3>SQL</h3>
+                    <span class="badge basic">Basic</span>
+                </div>
+            </div>
+            <p class="desc">Managing databases</p>
+            <p class="learned">SHS Database lessons</p>
+            <div class="progress-bar">
+                <div class="progress" style="width: 30%;"></div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+    <section id="contact" class="contact-section">
+
+        <h2 class="section-title">Contact Me</h2>
+
+        <p class="contact-text">
+            Feel free to connect with me through my social platforms.
+        </p>
+
+        <div class="contact-container">
+
+            <a href="https://www.facebook.com/chickenji.cabarloc" class="contact-card">
+                <img src="images/facebook.png" alt="Facebook">
+                <span>Facebook</span>
+                <p>Kenji Cabarloc</p>
+            </a>
+
+            <a href="https://www.instagram.com/cabarlokenji_" class="contact-card">
+                <img src="images/instagram.png" alt="Instagram">
+                <span>Instagram</span>
+                <p>cabarlokenji_</p>
+            </a>
+
+            <a href="mailto:laquindanumken@gmail.com" class="contact-card">
+                <img src="images/gmail.png" alt="Email">
+                <span>Email</span>
+                <p>laquindanumken@gmail.com</p>
+            </a>
+
+            <a href="https://www.tiktok.com/@kanjinomoto?_r=1&_d=secCgYIASAHKAESPgo80VwkPj4sxaMcYasQisMWFQyEIYRcnV3jDGGiAjiBXfkrh%2Fjjife3yRSaftQl8xTPCI10cNsaDZxJNO4pGgA%3D&_svg=1&checksum=cce61e051b1193da22f761fe6f5b3298fddfb9c3a71105b030293cf5f0f1cfe5&item_author_type=1&reflow_sign_scene=7&rgssign=8.1.TDsura3k62-T7WtJ1Hrrwg&sec_uid=MS4wLjABAAAAu23ixegnQ8Us2ZY6wwTLEUtZFPhg-lJgPAFzaOD647Nb8e_K0yDNU-Fy_qTNADuX&sec_user_id=MS4wLjABAAAAu23ixegnQ8Us2ZY6wwTLEUtZFPhg-lJgPAFzaOD647Nb8e_K0yDNU-Fy_qTNADuX&share_app_id=1180&share_author_id=6651864322547384321&share_link_id=ECEB3B30-A206-4970-AA5A-789F6530445F&share_region=PH&share_scene=1&sharer_language=en&social_share_type=4&source=h5_t&timestamp=1775835855&tt_from=copy&u_code=d4c7555hhc19kc&ug_btm=b0%2Cb0&user_id=6651864322547384321&utm_campaign=client_share&utm_medium=ios&utm_source=copy " class="contact-card">
+                <img src="images/tik-tok.png" alt="TikTok">
+                <span>TikTok</span>
+                <p>Kenjiro.</p>
+            </a>
+
+            <a href="tel:+639911531557" class="contact-card">
+                <img src="images/telephone.png" alt="Phone">
+                <span>Phone</span>
+                <p>+63 991 153 1557</p>
+            </a>
+
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
